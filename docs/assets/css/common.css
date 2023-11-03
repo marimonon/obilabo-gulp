@@ -184,6 +184,21 @@ ul {
   background-image: url(/assets/img/arrow-b.svg);
 }
 
+.contact {
+  margin-top: 240px;
+  padding-bottom: 80px;
+}
+.contact h4 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 24px;
+}
+@media screen and (max-width: 767px) {
+  .contact h4 {
+    font-size: 20px;
+  }
+}
+
 .drawer {
   position: fixed;
   z-index: 1500;
@@ -495,6 +510,7 @@ ul {
   .top-se__btn {
     width: 240px;
     margin-right: auto;
+    margin-top: 0;
   }
 }
 .top-se__img {
