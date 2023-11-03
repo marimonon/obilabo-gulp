@@ -78,11 +78,9 @@ ul {
   .u-block-sp {
     display: block !important;
   }
-
   .u-inline-block-sp {
     display: inline-block !important;
   }
-
   .u-inline-sp {
     display: inline !important;
   }
@@ -91,11 +89,9 @@ ul {
   .u-block-pc {
     display: block !important;
   }
-
   .u-inline-block-pc {
     display: inline-block !important;
   }
-
   .u-inline-pc {
     display: inline !important;
   }
@@ -153,7 +149,6 @@ ul {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -236,7 +231,6 @@ ul {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   -webkit-touch-callout: none;
 }

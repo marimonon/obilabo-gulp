@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9 140.53">
+  <defs>
+    <style>
+      .cls-1 {
+        mask: url(#mask);
+      }
+
+      .cls-2 {
+        fill: #2e3190;
+        font-family: HelveticaNeue-Bold, 'Helvetica Neue';
+        font-size: 9px;
+        font-weight: 700;
+        glyph-orientation-vertical: 90deg;
+        letter-spacing: .2em;
+        text-orientation: sideways-right;
+        writing-mode: tb;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #2e3190;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <filter id="luminosity-noclip" x="0" y="0" width="478.72" height="181.16" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask" x="0" y="0" width="478.72" height="181.16" maskUnits="userSpaceOnUse"/>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <g>
+      <g class="cls-1">
+        <text class="cls-2" transform="translate(4.5 0)"><tspan x="0" y="0">SCROLL</tspan></text>
+      </g>
+      <polyline class="cls-3" points="2.9 56.32 2.9 138.32 7.9 127.82"/>
+    </g>
+  </g>
+</svg>
