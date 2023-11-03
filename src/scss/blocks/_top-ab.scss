@@ -1,0 +1,61 @@
+@use "../mixin" as *;
+
+.top-ab {
+  display: flex;
+  justify-content: space-between;
+  @include sm {
+    display: inherit;
+  }
+
+  &__text {
+    margin-top: 80px;
+    flex: none;
+    @include lg {
+      margin-left: calc(50vw - 500px);
+    }
+    @include lg_down {
+      margin-left: $pc_padding;
+    }
+    @include sm {
+      margin-left: $sp_padding;
+    }
+    h4 {
+      margin-top: 40px;
+      font-size: 36px;
+      @include sm {
+        font-size: 24px;
+        margin-top: -20px;
+      }
+    }
+    p {
+      margin-top: 40px;
+      font-size: 16px;
+      @include sm {
+        font-size: 14px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__imgsp {
+    width: 140%;
+    margin-top: -80px;
+  }
+
+  &__img {
+    width: calc(60vw + 400px);
+    overflow-y: hidden;
+    margin-left: -200px;
+    margin-right: -300px;
+    flex: none;
+    text-align: right;
+    position: relative;
+    z-index: -1;
+    img {
+      width: 100%;
+      max-height: 860px;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+}
