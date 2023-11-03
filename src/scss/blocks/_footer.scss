@@ -1,5 +1,36 @@
 @use "../mixin" as *;
 
 .footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: $color-main1;
+  @include sm {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @include sm {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    color: $white;
+    text-decoration: none;
+    @include sm {
+      display: inline-block;
+      width: 100%;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+
+  p {
+    margin-top: 40px;
+    color: $white;
+  }
 }
