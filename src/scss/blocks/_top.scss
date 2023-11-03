@@ -3,10 +3,26 @@
 .top {
   position: relative;
 
+  &__img {
+    @include sm {
+      width: 140%;
+      margin-right: -20px;
+      margin-left: calc(-40% + 20px);
+    }
+    img {
+      @include sm {
+        width: 100%;
+      }
+    }
+  }
+
   h2 {
     position: absolute;
     top: 30%;
     font-size: 16px;
+    @include sm {
+      position: inherit;
+    }
   }
 
   p {
@@ -15,6 +31,12 @@
     right: 10%;
     font-size: 10px;
     font-weight: bold;
+    @include sm {
+      font-size: 2vw;
+      bottom: inherit;
+      top: 30%;
+      right: 0px;
+    }
     @include font_change
   }
 
@@ -23,5 +45,10 @@
     right: 0;
     bottom: 10%;
     width: 10px;
+    @include sm {
+      position: inherit;
+      margin-left: auto;
+      margin-top: -48px;
+    }
   }
 }

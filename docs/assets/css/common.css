@@ -126,8 +126,8 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -220,7 +220,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .header__inner {
-    padding: 20px 30px;
+    padding: 20px 20px;
   }
 }
 .header__logo {
@@ -313,10 +313,27 @@ ul {
 .top {
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .top__img {
+    width: 140%;
+    margin-right: -20px;
+    margin-left: calc(-40% + 20px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .top__img img {
+    width: 100%;
+  }
+}
 .top h2 {
   position: absolute;
   top: 30%;
   font-size: 16px;
+}
+@media screen and (max-width: 767px) {
+  .top h2 {
+    position: inherit;
+  }
 }
 .top p {
   position: absolute;
@@ -326,9 +343,24 @@ ul {
   font-weight: bold;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
+@media screen and (max-width: 767px) {
+  .top p {
+    font-size: 2vw;
+    bottom: inherit;
+    top: 30%;
+    right: 0px;
+  }
+}
 .top__scroll {
   position: absolute;
   right: 0;
   bottom: 10%;
   width: 10px;
+}
+@media screen and (max-width: 767px) {
+  .top__scroll {
+    position: inherit;
+    margin-left: auto;
+    margin-top: -48px;
+  }
 }
