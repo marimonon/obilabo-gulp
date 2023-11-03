@@ -110,14 +110,14 @@ ul {
     display: none !important;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 848px) {
   .container {
-    width: 1000px;
+    width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 847px) {
   .container {
     padding-left: 40px;
     padding-right: 40px;
@@ -125,8 +125,8 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
