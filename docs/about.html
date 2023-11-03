@@ -4,29 +4,23 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
-	<title><%= title %></title>
-	<meta name="description" content="<%= description %>">
-	<% if (noindex) { %>
-		<meta name="robots" content="noindex">
-	<% } %>
+	<title>株式会社オビラボ</title>
+	<meta name="description" content="経営者とともに考える⼈材成⻑⽀援カンパニー">
+	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/assets/css/common.css">
 </head>
-<body class="page-<%= page %>">
+<body class="page-about">
 <div class="wrapper">
 	<header class="header">
 		<div class="header__inner">
-			<% if ('home' === page) { %>
-				<h1 class="header__logo">
-					<a href="/"><img src="/assets/img/logo.svg" alt="株式会社オビラボ"></a>
-				</h1>
-			<% } else { %>
+			
 				<div class="header__logo">
 					<a href="/"><img src="/assets/img/logo.svg" alt="株式会社オビラボ"></a>
 				</div>
-			<% } %>
+			
 			<nav class="header__nav">
 				<ul class="header__list">
 					<li><a href="/about.html" class="header__link">会社情報</a></li>
@@ -51,3 +45,23 @@
 			<div class="drawer__shade" id="drawer_shade"></div>
 		</div>
 	</header>
+
+
+	<footer class="footer">
+		<div class="container">
+			<nav class="footer__nav">
+				<ul class="footer__list">
+					<li><a href="/about.html" class="footer__link">会社情報</a></li>
+					<li><a href="/service.html" class="footer__link">オビラボ管理職道場</a></li>
+					<li><a href="/#contact" class="footer__link">お問い合わせ</a></li>
+					<li><a href="/privacy.html" class="footer__link">プライバシーポリシー</a></li>
+				</ul>
+			</nav>
+			<p>© Obilabo Co., Ltd.</p>
+		</div>
+	</footer>
+
+</div>
+<script src="/assets/js/common.js"></script>
+</body>
+</html>
