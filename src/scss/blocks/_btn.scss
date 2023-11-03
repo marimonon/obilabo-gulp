@@ -21,6 +21,9 @@
 	user-select: none;
 	border-radius: 40px;
 	transition: all 0.3s ease-in-out;
+	@include sm {
+		font-size: 14px;
+	}
 	&:hover {
 		opacity: 0.7;
 		gap: 40px;
@@ -33,5 +36,14 @@
 		width: 32px;
 		height: 8px;
 		margin-right: -30px;
+	}
+
+	&.-border {
+		color: $color-main1;
+		border: 1px solid $color-main1;
+		background-color: transparent;
+		&::after {
+			background-image: url(/assets/img/arrow-b.svg);
+		}
 	}
 }

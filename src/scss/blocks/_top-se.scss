@@ -3,9 +3,71 @@
 .top-se {
   background: linear-gradient(to right, $white, $color-main2);
   padding-top: 80px;
+  padding-bottom: 80px;
   margin-top: -40px;
-  display: flex;
+  position: relative;
   @include sm {
     margin-top: 40px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    @include sm {
+      display: inherit;
+      height: 440px;
+    }
+  }
+
+  &__text {
+    text-align: right;
+    h4 {
+      font-size: 24px;
+      @include sm {
+        font-size: 20px;
+        margin-top: 40px;
+      }
+    }
+  
+    p {
+      margin-top: 40px;
+      font-size: 16px;
+      @include sm {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 40px;
+    width: 300px;
+    margin-left: auto;
+    @include sm {
+      width: 240px;
+      margin-right: auto;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 70%;
+    max-width: calc(50vw + 200px);
+    left: -10%;
+    top: 30%;
+    max-height: 600px;
+    overflow-y: hidden;
+    img {
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+
+  &__imgsp {
+    margin-top: 0;
+    margin-left: -20%;
   }
 }

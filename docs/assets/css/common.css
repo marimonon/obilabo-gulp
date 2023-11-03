@@ -157,6 +157,11 @@ ul {
   border-radius: 40px;
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 767px) {
+  .btn {
+    font-size: 14px;
+  }
+}
 .btn:hover {
   opacity: 0.7;
   gap: 40px;
@@ -169,6 +174,14 @@ ul {
   width: 32px;
   height: 8px;
   margin-right: -30px;
+}
+.btn.-border {
+  color: #2E3190;
+  border: 1px solid #2E3190;
+  background-color: transparent;
+}
+.btn.-border::after {
+  background-image: url(/assets/img/arrow-b.svg);
 }
 
 .drawer {
@@ -430,13 +443,79 @@ ul {
 .top-se {
   background: linear-gradient(to right, #ffffff, #CBEBF6);
   padding-top: 80px;
+  padding-bottom: 80px;
   margin-top: -40px;
-  display: flex;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   .top-se {
     margin-top: 40px;
   }
+}
+.top-se__box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .top-se__box {
+    display: inherit;
+    height: 440px;
+  }
+}
+.top-se__text {
+  text-align: right;
+}
+.top-se__text h4 {
+  font-size: 24px;
+}
+@media screen and (max-width: 767px) {
+  .top-se__text h4 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+}
+.top-se__text p {
+  margin-top: 40px;
+  font-size: 16px;
+}
+@media screen and (max-width: 767px) {
+  .top-se__text p {
+    font-size: 12px;
+  }
+}
+.top-se__btn {
+  margin-top: 40px;
+  width: 300px;
+  margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .top-se__btn {
+    width: 240px;
+    margin-right: auto;
+  }
+}
+.top-se__img {
+  position: absolute;
+  width: 70%;
+  max-width: calc(50vw + 200px);
+  left: -10%;
+  top: 30%;
+  max-height: 600px;
+  overflow-y: hidden;
+}
+.top-se__img img {
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.top-se__imgsp {
+  margin-top: 0;
+  margin-left: -20%;
 }
 
 .top {
@@ -467,8 +546,8 @@ ul {
 .top p {
   position: absolute;
   bottom: 10%;
-  right: 10%;
-  font-size: 10px;
+  right: 8%;
+  font-size: 14px;
   font-weight: bold;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
