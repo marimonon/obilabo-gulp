@@ -1,0 +1,11 @@
+@use "../mixin" as *;
+
+.top-se {
+  background: linear-gradient(to right, $white, $color-main2);
+  padding-top: 80px;
+  margin-top: -40px;
+  display: flex;
+  @include sm {
+    margin-top: 40px;
+  }
+}
