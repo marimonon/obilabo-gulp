@@ -3,12 +3,15 @@
 .home {
   overflow-x: hidden;
   h3 {
-    font-size: 20px;
+    font-size: 24px;
     border-left: 6px solid $color-main2;
     border-image: linear-gradient(to top, $accent 0%, $color-main3 100%);
     border-image-slice: 1;
     font-weight: bold;
     padding-left: 24px;
-    @include font_change
+    @include font_change;
+    @include sm {
+      font-size: 20px;
+    }
   }
 }

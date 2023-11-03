@@ -211,10 +211,10 @@ ul {
 
 .header__inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   max-width: 1000px;
-  padding: 40px 20px;
+  padding: 40px 20px 0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -259,7 +259,7 @@ ul {
   overflow-x: hidden;
 }
 .home h3 {
-  font-size: 20px;
+  font-size: 24px;
   border-left: 6px solid #CBEBF6;
   -o-border-image: linear-gradient(to top, #9EFFA8 0%, #67A9FF 100%);
      border-image: linear-gradient(to top, #9EFFA8 0%, #67A9FF 100%);
@@ -267,6 +267,11 @@ ul {
   font-weight: bold;
   padding-left: 24px;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .home h3 {
+    font-size: 20px;
+  }
 }
 
 .sp-menu {
