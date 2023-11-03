@@ -1,4 +1,4 @@
-$pc_width: 768px;
+$pc_width: 1000px;
 $pc_padding: 40px;
 $sp_padding: 30px;
 $break_sm: 768px;
@@ -33,6 +33,10 @@ $break_lg: $pc_width + ($pc_padding * 2);
 	@media screen and (min-width: $break_lg) {
 		@content;
 	}
+}
+
+@mixin font_change {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 
