@@ -4,13 +4,13 @@
 .sp-menu {
 	position: fixed;
 	z-index: 2000;
-	top: 0;
-	right: 0;
-	width: 50px;
-	height: 50px;
+	top: 20px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
 	padding: 0;
 	border: none;
-	background-color: rgba(#fff, .5);
+	background-color: transparent;
 	font-family: inherit;
 	line-height: 1;
 	outline: none;
@@ -21,28 +21,28 @@
 
 %sp-menu__bar {
 	position: absolute;
-	left: 10px;
-	right: 10px;
+	left: 0px;
+	right: 0px;
 	height: 1px;
-	background-color: #000;
+	background-color: $color-main1;
 	transition: all 0.3s;
 }
 
 .sp-menu__bar-1 {
 	@extend %sp-menu__bar;
 	display: block;
-	top: 14px;
+	top: 4px;
 	transform-origin: left;
 
 	.is-drawer-active & {
-		transform: translateY(-4px) rotate(45deg) scaleX(1.4142);
+		transform: translateY(-8px) rotate(45deg) scaleX(1.4142);
 	}
 }
 
 .sp-menu__bar-2 {
 	@extend %sp-menu__bar;
 	display: block;
-	top: 24px;
+	top: 19px;
 
 	.is-drawer-active & {
 		transform: scaleX(0);
@@ -56,7 +56,7 @@
 	transform-origin: left;
 
 	.is-drawer-active & {
-		transform: translateY(5px) rotate(-45deg) scaleX(1.4142);
+		transform: translateY(20px) rotate(-45deg) scaleX(1.4142);
 	}
 }
 

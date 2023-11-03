@@ -14,6 +14,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 body {
   font-family: "Noto Sans JP", "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "メイリオ", Meiryo, sans-serif;
   line-height: 1.75;
+  color: #2E3190;
   box-sizing: border-box;
 }
 @media screen and (max-width: 767px) {
@@ -157,7 +158,6 @@ ul {
   z-index: 1500;
   top: 0;
   right: 0;
-  bottom: 0;
   width: 80%;
   max-width: 300px;
   background-color: #fff;
@@ -174,6 +174,19 @@ ul {
     visibility: visible;
     transform: none;
   }
+}
+.drawer__list {
+  margin-top: 100px;
+}
+.drawer__link {
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #2E3190;
+  border-bottom: 1px solid #ffffff;
+  background-color: #CBEBF6;
 }
 
 .drawer__shade {
@@ -205,16 +218,36 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 767px) {
+  .header__inner {
+    padding: 20px 30px;
+  }
+}
 .header__logo {
   width: 64px;
+  flex: none;
+}
+@media screen and (max-width: 767px) {
+  .header__logo {
+    width: 36px;
+  }
+}
+.header__nav {
+  width: 80%;
+  margin-left: 20%;
 }
 .header__list {
   display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .header__list {
     display: none;
   }
+}
+.header__link {
+  color: #2E3190;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px), print {
   .header__sp-menu {
@@ -225,13 +258,13 @@ ul {
 .sp-menu {
   position: fixed;
   z-index: 2000;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
   padding: 0;
   border: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
   font-family: inherit;
   line-height: 1;
   outline: none;
@@ -244,25 +277,25 @@ ul {
 
 .sp-menu__bar-3, .sp-menu__bar-2, .sp-menu__bar-1 {
   position: absolute;
-  left: 10px;
-  right: 10px;
+  left: 0px;
+  right: 0px;
   height: 1px;
-  background-color: #000;
+  background-color: #2E3190;
   transition: all 0.3s;
 }
 
 .sp-menu__bar-1 {
   display: block;
-  top: 14px;
+  top: 4px;
   transform-origin: left;
 }
 .is-drawer-active .sp-menu__bar-1 {
-  transform: translateY(-4px) rotate(45deg) scaleX(1.4142);
+  transform: translateY(-8px) rotate(45deg) scaleX(1.4142);
 }
 
 .sp-menu__bar-2 {
   display: block;
-  top: 24px;
+  top: 19px;
 }
 .is-drawer-active .sp-menu__bar-2 {
   transform: scaleX(0);
@@ -274,5 +307,5 @@ ul {
   transform-origin: left;
 }
 .is-drawer-active .sp-menu__bar-3 {
-  transform: translateY(5px) rotate(-45deg) scaleX(1.4142);
+  transform: translateY(20px) rotate(-45deg) scaleX(1.4142);
 }
