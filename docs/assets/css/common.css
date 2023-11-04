@@ -180,6 +180,64 @@ ul {
   margin-top: 40px;
 }
 
+.ab-two {
+  background: linear-gradient(to right, #CBEBF6, #ffffff);
+  position: relative;
+  margin-top: 120px;
+}
+@media screen and (max-width: 767px) {
+  .ab-two {
+    background: linear-gradient(to right, #CBEBF6, #F0F9FC);
+    margin-bottom: 160px;
+  }
+}
+.ab-two__img {
+  position: absolute;
+  top: -10%;
+  right: 0;
+  width: 60%;
+  overflow-y: hidden;
+}
+@media screen and (max-width: 767px) {
+  .ab-two__img {
+    top: 40%;
+    width: 100%;
+  }
+}
+.ab-two__img img {
+  width: 100%;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media screen and (max-width: 767px) {
+  .ab-two__img img {
+    max-height: 300px;
+  }
+}
+.ab-two__text {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .ab-two__text {
+    padding-top: 40px;
+    padding-bottom: 120px;
+  }
+}
+.ab-two__text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.ab-two__text p {
+  margin-top: 40px;
+}
+
 .btn {
   display: flex;
   justify-content: center;
