@@ -2,11 +2,14 @@
 
 .se-top {
   margin-bottom: 40px;
-  
+
   h2 {
     font-size: 36px;
     text-align: center;
     margin-top: 40px;
+    @include sm {
+      font-size: 24px;
+    }
   }
   p {
     margin-top: 40px;

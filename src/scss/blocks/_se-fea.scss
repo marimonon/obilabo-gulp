@@ -3,21 +3,36 @@
 .se-fea {
   margin-top: 40px;
   padding-top: 60px;
+  padding-bottom: 80px;
   background: linear-gradient(to left, $white 25%, $color-main4 25%, $color-main4 75%, $white 25%);
+  @include sm {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   &__item {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
+    @include sm {
+      flex-direction: column;
+    }
     &.-even {
       flex-direction: row-reverse;
+      @include sm {
+        flex-direction: column;
+      }
     }
   }
 
   &__text {
     width: 45%;
     margin-bottom: 80px;
+    @include sm {
+      width: 100%;
+      margin-bottom: 20px;
+    }
     p {
       margin-top: 40px;
     }
@@ -27,6 +42,10 @@
     display: flex;
     align-items: flex-start;
     gap: 40px;
+    @include sm {
+      flex-direction: column;
+      align-items: center;
+    }
     span {
       @include font_change;
       font-weight: bold;
@@ -40,6 +59,9 @@
 
     h3 {
       font-size: 24px;
+      @include sm {
+        width: 100%;
+      }
     }
   }
 
@@ -49,27 +71,57 @@
     &.-one {
       width: 70%;
       margin-left: -20%;
+      margin-bottom: -40px;
+      @include sm {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     &.-two {
       width: 48%;
       margin-left: 14%;
       margin-top: -80px;
+      @include sm {
+        width: 100%;
+        margin-left: 20px;
+      }
     }
 
     &.-three {
       width: 54%;
+      @include sm {
+        width: 100%;
+        margin-left: -20px;
+        margin-bottom: 40px;
+        overflow-x: hidden;
+        img {
+          max-width: 120%;
+          width: 120%;
+        }
+      }
     }
 
     &.-four {
-      width: 36%;
-      margin-left: 10%;
+      width: 32%;
+      margin-left: 12%;
       margin-bottom: 40px;
+      @include sm {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     &.-five {
       width: 40%;
       margin-right: 6%;
+      @include sm {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 }
