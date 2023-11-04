@@ -607,6 +607,7 @@ ul {
   .se-fea {
     padding-top: 40px;
     padding-bottom: 40px;
+    background: linear-gradient(to left, #ffffff 20%, #F0F9FC 20%, #F0F9FC 80%, #ffffff 80%);
   }
 }
 .se-fea__item {
@@ -635,7 +636,7 @@ ul {
 @media screen and (max-width: 767px) {
   .se-fea__text {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
 .se-fea__text p {

@@ -8,6 +8,7 @@
   @include sm {
     padding-top: 40px;
     padding-bottom: 40px;
+    background: linear-gradient(to left, $white 20%, $color-main4 20%, $color-main4 80%, $white 80%);
   }
 
   &__item {
@@ -31,7 +32,7 @@
     margin-bottom: 80px;
     @include sm {
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
     }
     p {
       margin-top: 40px;
