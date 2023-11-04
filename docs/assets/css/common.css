@@ -425,6 +425,9 @@ ul {
     flex-direction: column-reverse;
   }
 }
+.found__text {
+  display: block;
+}
 @media screen and (max-width: 767px) {
   .found__text {
     margin-top: 40px;
@@ -436,12 +439,17 @@ ul {
   margin-bottom: 40px;
 }
 @media screen and (max-width: 767px) {
-  .found__text p:last-child {
+  .found__text p br {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .found__name {
     text-align: center;
   }
 }
-.found__text br {
-  display: none;
+.found__name p br {
+  display: block;
 }
 .found__img {
   width: 240px;

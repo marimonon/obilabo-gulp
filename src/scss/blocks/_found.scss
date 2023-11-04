@@ -23,6 +23,7 @@
   }
 
   &__text {
+    display: block;
     @include sm {
       margin-top: 40px;
       display: flex;
@@ -30,14 +31,22 @@
     }
     p {
       margin-bottom: 40px;
-      &:last-child {
+      br {
         @include sm {
-          text-align: center;
+          display: none;
         }
       }
     }
-    br {
-      display: none;
+  }
+
+  &__name {
+    @include sm {
+      text-align: center;
+    }
+    p {
+      br {
+        display: block;
+      }
     }
   }
 
