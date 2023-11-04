@@ -1,0 +1,75 @@
+@use "../mixin" as *;
+
+.se-fea {
+  margin-top: 40px;
+  padding-top: 60px;
+  background: linear-gradient(to left, $white 25%, $color-main4 25%, $color-main4 75%, $white 25%);
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    &.-even {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__text {
+    width: 45%;
+    margin-bottom: 80px;
+    p {
+      margin-top: 40px;
+    }
+  }
+
+  &__sub {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    span {
+      @include font_change;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 30px;
+      display: inline-block;
+      border-bottom: 6px solid $color-main2;
+      border-image: linear-gradient(to right, $color-main2, $accent);
+      border-image-slice: 1;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+  &__img {
+    text-align: center;
+
+    &.-one {
+      width: 70%;
+      margin-left: -20%;
+    }
+
+    &.-two {
+      width: 48%;
+      margin-left: 14%;
+      margin-top: -80px;
+    }
+
+    &.-three {
+      width: 54%;
+    }
+
+    &.-four {
+      width: 36%;
+      margin-left: 10%;
+      margin-bottom: 40px;
+    }
+
+    &.-five {
+      width: 40%;
+      margin-right: 6%;
+    }
+  }
+}
