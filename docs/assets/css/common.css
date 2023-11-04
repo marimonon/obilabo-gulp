@@ -291,6 +291,64 @@ ul {
   background-image: url(/assets/img/arrow-b.svg);
 }
 
+.company {
+  margin-top: 120px;
+  padding-bottom: 120px;
+}
+@media screen and (max-width: 767px) {
+  .company {
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.company h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.company table {
+  width: 100%;
+  margin-top: 80px;
+  border-top: 1px solid #2E3190;
+  border-collapse: collapse;
+}
+@media screen and (max-width: 767px) {
+  .company table {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .company tr {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #2E3190;
+    border-collapse: collapse;
+  }
+}
+.company tr td {
+  padding: 20px 20px;
+  border-bottom: 1px solid #2E3190;
+  border-collapse: collapse;
+}
+@media screen and (max-width: 767px) {
+  .company tr td {
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+.company tr td:first-child {
+  width: 38%;
+  padding-left: 18%;
+}
+@media screen and (max-width: 767px) {
+  .company tr td:first-child {
+    width: 100%;
+    padding-left: 8px;
+  }
+}
+
 .contact {
   margin-top: 240px;
   padding-bottom: 80px;

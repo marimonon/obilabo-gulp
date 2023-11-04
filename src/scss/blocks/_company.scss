@@ -1,0 +1,53 @@
+@use "../mixin" as *;
+
+.company {
+  margin-top: 120px;
+  padding-bottom: 120px;
+  @include sm {
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    @include font_change;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 80px;
+    border-top: 1px solid $color-main1;
+    border-collapse: collapse;
+    @include sm {
+      margin-top: 40px;
+    }
+  }
+  tr {
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid $color-main1;
+      border-collapse: collapse;
+    }    
+    td {
+      padding: 20px 20px;
+      border-bottom: 1px solid $color-main1;
+      border-collapse: collapse;
+      @include sm {
+        border: none;
+        padding: 8px;
+        font-size: 14px;
+      }
+      &:first-child {
+        width: 38%;
+        padding-left: 18%;
+        @include sm {
+          width: 100%;
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+}
