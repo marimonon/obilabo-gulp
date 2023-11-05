@@ -1,0 +1,65 @@
+@use "../mixin" as *;
+
+.se-con {
+  margin-top: 80px;
+
+  &__inner {
+    background-color: $color-main4;
+    padding-bottom: 40px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 120px;
+    @include sm {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    max-width: 320px;
+    width: 33%;
+    background-color: $white;
+    margin-top: -40px;
+    padding: 40px 20px;
+    box-shadow: 0px 0px 30px $color-shadow1;
+    position: relative;
+    @include sm {
+      margin-top: 40px;
+      padding: 40px 20px;
+      width: 100%;
+      max-width: inherit;
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 6px;
+      height: 36px;
+      background: linear-gradient(to top, $accent, $color-main3);
+      top: -18px;
+      left: calc(50% - 3px);
+    }
+
+    h3 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    ul {
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    li {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    span {
+      font-size: 10px;
+    }
+  }
+}
