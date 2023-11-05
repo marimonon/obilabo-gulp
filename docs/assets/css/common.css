@@ -616,7 +616,7 @@ ul {
   }
 }
 .privacy p {
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   padding: 40px;
 }
 @media screen and (max-width: 767px) {
