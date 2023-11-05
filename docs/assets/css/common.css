@@ -597,6 +597,34 @@ ul {
   }
 }
 
+.privacy {
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 767px) {
+  .privacy {
+    padding-bottom: 40px;
+  }
+}
+.privacy h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+  .privacy h2 {
+    font-size: 24px;
+  }
+}
+.privacy p {
+  letter-spacing: 0.2em;
+  padding: 40px;
+}
+@media screen and (max-width: 767px) {
+  .privacy p {
+    padding: 40px 0;
+  }
+}
+
 .se-con {
   margin-top: 80px;
 }
@@ -613,6 +641,8 @@ ul {
 @media screen and (max-width: 767px) {
   .se-con__cards {
     flex-direction: column;
+    gap: 160px;
+    margin-top: 200px;
   }
 }
 .se-con__card {
@@ -626,7 +656,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .se-con__card {
-    margin-top: 40px;
+    margin-top: -120px;
     padding: 40px 20px;
     width: 100%;
     max-width: inherit;
