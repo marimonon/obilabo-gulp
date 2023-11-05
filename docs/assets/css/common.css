@@ -363,6 +363,118 @@ ul {
     font-size: 20px;
   }
 }
+.contact__form {
+  padding: 0 40px;
+}
+@media screen and (max-width: 767px) {
+  .contact__form {
+    padding: 0;
+  }
+}
+.contact__item {
+  display: flex;
+  margin-top: 40px;
+  color: #808080;
+}
+@media screen and (max-width: 767px) {
+  .contact__item {
+    flex-direction: column;
+  }
+}
+.contact__item label {
+  width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .contact__item label {
+    width: 100%;
+  }
+}
+.contact__item input {
+  width: 70%;
+  height: 40px;
+  padding-left: 10px;
+}
+@media screen and (max-width: 767px) {
+  .contact__item input {
+    width: 100%;
+  }
+}
+.contact__item input::-moz-placeholder {
+  color: #CACACA;
+}
+.contact__item input::placeholder {
+  color: #CACACA;
+}
+.contact__item select {
+  height: 40px;
+  width: 70%;
+  font-size: 16px;
+  color: #CACACA;
+}
+@media screen and (max-width: 767px) {
+  .contact__item select {
+    width: 100%;
+  }
+}
+.contact__item option:first-child {
+  color: #CACACA;
+}
+.contact__item textarea {
+  height: 300px;
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+}
+@media screen and (max-width: 767px) {
+  .contact__item textarea {
+    width: 100%;
+  }
+}
+.contact__item textarea::-moz-placeholder {
+  color: #CACACA;
+}
+.contact__item textarea::placeholder {
+  color: #CACACA;
+}
+.contact__privacy {
+  margin-left: 30%;
+  margin-top: 20px;
+  color: #808080;
+}
+@media screen and (max-width: 767px) {
+  .contact__privacy {
+    margin-left: 0;
+  }
+}
+.contact__privacy a {
+  margin-left: 10px;
+  color: #808080;
+}
+.contact__btn {
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: calc(50% - 110px);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 767px) {
+  .contact__btn {
+    margin-top: 40px;
+  }
+}
+.contact__btn::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/assets/img/arrow-w.svg);
+  width: 32px;
+  height: 8px;
+  position: absolute;
+  right: 32px;
+  top: 26px;
+}
+.contact__btn:hover::after {
+  right: 24px;
+}
 
 .drawer {
   position: fixed;

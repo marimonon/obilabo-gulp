@@ -11,4 +11,100 @@
       font-size: 20px;
     }
   }
+
+  &__form {
+    padding: 0 40px;
+    @include sm {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    margin-top: 40px;
+    color: $gray1;
+    @include sm {
+      flex-direction: column;
+    }
+    label {
+      width: 30%;
+      @include sm {
+        width: 100%;
+      }
+    }
+    input {
+      width: 70%;
+      height: 40px;
+      padding-left: 10px;
+      @include sm {
+        width: 100%;
+      }
+    }
+    input::placeholder {
+      color: $gray2;
+    }
+    select {
+      height: 40px;
+      width: 70%;
+      font-size: 16px;
+      color: $gray2;
+      @include sm {
+        width: 100%;
+      }
+    }
+    option:first-child{
+      color: $gray2;
+    }
+    textarea {
+      height: 300px;
+      width: 70%;
+      padding: 10px;
+      font-size: 16px;
+      @include sm {
+        width: 100%;
+      }
+    }
+    textarea::placeholder {
+      color: $gray2;
+    }
+  }
+
+  &__privacy {
+    margin-left: 30%;
+    margin-top: 20px;
+    color: $gray1;
+    @include sm {
+      margin-left: 0;
+    }
+    a {
+      margin-left: 10px;
+      color: $gray1;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: calc(50% - 110px);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    @include sm {
+      margin-top: 40px;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      background-image: url(/assets/img/arrow-w.svg);
+      width: 32px;
+      height: 8px;
+      position: absolute;
+      right: 32px;
+      top: 26px;
+    }
+    &:hover {
+      &::after {
+        right: 24px;
+      }
+    }
+  }
 }
