@@ -1,0 +1,61 @@
+@use "../mixin" as *;
+
+.se-teach {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: $color-main4;
+  @include sm {
+    padding-bottom: 60px;
+  }
+
+  &__cards {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    @include sm {
+      margin-top: 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+  }
+
+  &__card {
+    background-color: $white;
+    width: 33%;
+    max-width: 320px;
+    @include sm {
+      margin-top: 40px;
+      width: 100%;
+      max-width: inherit;
+    }
+    h3 {
+      font-size: 18px;
+    }
+
+    span {
+      display: block;
+    }
+
+    h4 {
+      font-size: 13px;
+      margin-top: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $color-main1;
+      border-image: linear-gradient(to right, $color-main1 20%, $white 20%);
+      border-image-slice: 1;
+      &::before {
+        content: "担当：";
+      }
+    }
+    p {
+      margin-top: 12px;
+      font-size: 12px;
+    }
+  }
+
+  &__text {
+    padding: 20px;
+  }
+}

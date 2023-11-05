@@ -798,6 +798,68 @@ ul {
   }
 }
 
+.se-teach {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #F0F9FC;
+}
+@media screen and (max-width: 767px) {
+  .se-teach {
+    padding-bottom: 60px;
+  }
+}
+.se-teach__cards {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media screen and (max-width: 767px) {
+  .se-teach__cards {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
+.se-teach__card {
+  background-color: #ffffff;
+  width: 33%;
+  max-width: 320px;
+}
+@media screen and (max-width: 767px) {
+  .se-teach__card {
+    margin-top: 40px;
+    width: 100%;
+    max-width: inherit;
+  }
+}
+.se-teach__card h3 {
+  font-size: 18px;
+}
+.se-teach__card span {
+  display: block;
+}
+.se-teach__card h4 {
+  font-size: 13px;
+  margin-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2E3190;
+  -o-border-image: linear-gradient(to right, #2E3190 20%, #ffffff 20%);
+     border-image: linear-gradient(to right, #2E3190 20%, #ffffff 20%);
+  border-image-slice: 1;
+}
+.se-teach__card h4::before {
+  content: "担当：";
+}
+.se-teach__card p {
+  margin-top: 12px;
+  font-size: 12px;
+}
+.se-teach__text {
+  padding: 20px;
+}
+
 .se-top {
   margin-bottom: 40px;
 }
@@ -1112,4 +1174,55 @@ ul {
     margin-left: auto;
     margin-top: -48px;
   }
+}
+
+.training {
+  padding-top: 80px;
+  background-color: #CBEBF6;
+}
+.training__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media screen and (max-width: 767px) {
+  .training__cards {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.training__card {
+  width: 50%;
+  max-width: 480px;
+  background: linear-gradient(to right, #CBEBF6, #F0F9FC);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.16);
+  padding: 32px;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+  .training__card {
+    width: 100%;
+    max-width: inherit;
+  }
+}
+.training__card h3 {
+  font-size: 16px;
+  margin-top: -20px;
+}
+.training__card p {
+  margin-top: 12px;
+  font-size: 14px;
+}
+.training__number {
+  margin-top: -40px;
+}
+.training__number span {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 72px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: -60px;
 }
