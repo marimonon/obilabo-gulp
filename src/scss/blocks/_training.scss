@@ -2,15 +2,21 @@
 
 .training {
   padding-top: 80px;
+  padding-bottom: 100px;
   background-color: $color-main2;
+  @include sm {
+    padding-bottom: 60px;
+  }
 
   &__cards {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    margin-top: 60px;
     @include sm {
       flex-direction: column;
       gap: 0;
+      margin-top: 0;
     }
   }
 
@@ -21,10 +27,10 @@
     box-shadow: 0px 0px 30px $color-shadow1;
     padding: 32px;
     border-radius: 20px;
-    margin-top: 60px;
     @include sm {
       width: 100%;
       max-width: inherit;
+      margin-top: 60px;
     }
     h3 {
       font-size: 16px;
@@ -46,6 +52,17 @@
       font-weight: bold;
       font-style: italic;
       margin-top: -60px;
+    }
+  }
+
+  &__btn {
+    margin-top: 60px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    @include sm {
+      margin-top: 60px;
+      width: 280px;
     }
   }
 }
