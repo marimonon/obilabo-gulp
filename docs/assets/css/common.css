@@ -409,7 +409,6 @@ ul {
   height: 40px;
   width: 70%;
   font-size: 16px;
-  color: #CACACA;
 }
 @media screen and (max-width: 767px) {
   .contact__item select {
@@ -977,10 +976,11 @@ ul {
   }
 }
 .se-teach__card h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 .se-teach__card span {
   display: block;
+  font-size: 16px;
 }
 .se-teach__card h4 {
   font-size: 13px;
